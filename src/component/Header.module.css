@@ -1,0 +1,24 @@
+.titulo {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    width: 92px;
+    height: 48px;
+
+    background: linear-gradient(to right, var(--blue)35%, var(--purple-dark)50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header {
+    display: flex;
+    width: 7.875rem;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logoRocket {
+    width: 1.375rem;
+    height: 2.25rem;
+}
+

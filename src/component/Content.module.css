@@ -1,0 +1,14 @@
+.content{
+    width: 46rem;
+}
+
+.headerContainer{
+    height: 2.7rem;
+    background: var(--gray-600);
+}
+
+.mainContainer {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 1rem;
+}

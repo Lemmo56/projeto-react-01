@@ -1,0 +1,35 @@
+.fontContentDone{
+    color: var(--purple);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+}
+
+.fontContentCreate{
+    color: var(--blue);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+}
+
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.headerContainer{
+    display: flex;
+}
+
+.circleContainer {
+    margin-left: 8px;
+    width: 25px; /* Defina a largura desejada */
+    height: 19px; /* Defina a altura desejada */
+    background-color: var(--gray-400); /* Cor de fundo do círculo */
+    border-radius: 40%; /* Deixa o contêiner circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0e0e0; /* Cor do texto */
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+}

@@ -1,0 +1,92 @@
+.mainContainer {
+    width: 46rem;
+    min-height:4.5rem;
+    height: auto;
+    border: 1px solid var(--gray-400);
+    border-radius: 0.5rem;
+    background: var(--gray-500);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.mainContainer button{
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    color: var(--gray-300);
+    line-height: 0;
+    border-radius: 4px;
+    padding: 3px;
+    margin-top: 2px;
+}
+
+.checkboxContainer {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    width: 1rem;
+    margin-top: 6px;
+    background-color: var(--gray-500);
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+}
+
+.checkboxContainer input:checked ~ .checkmark {
+    background-color: var(--purple-dark);
+    border: 2px solid var(--purple-dark);
+}
+
+.checkboxContainer input:checked ~ .checkmark::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 1.5px;
+    left: 5px;
+    width: 2px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+.textContainer{
+    margin-top: 3px;
+    max-width: 39.5rem;
+    overflow-wrap: break-word;
+    flex: 1;
+}
+
+.trashIcon {
+    margin-top: 2px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.completedTask{
+    text-decoration: line-through;
+    color: var(--gray-300);
+    pointer-events: none;
+    opacity: 0.6;
+}
